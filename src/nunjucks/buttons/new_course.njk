@@ -1,0 +1,25 @@
+{% set company = "My random company" %}
+	{% if not(title) %}
+{% set title = "Default title" %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+
+
+
+
+</head>
+<body>
+	{% include "src/nunjucks/templates/header.njk" %}
+	<div class="container">
+		<div class="row">
+			{% block content %}{% endblock %}
+		</div>
+	</div>
+	{% include "src/nunjucks/templates/footer.njk" %}
+
+</body>
+</html>
