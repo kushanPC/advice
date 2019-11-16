@@ -4,22 +4,18 @@
 {% endif %}
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>{{ title }}</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ title }}</title>
+	</head>
 
-
-
-
-</head>
-<body>
-	{% include "src/nunjucks/templates/header.njk" %}
-	<div class="container">
-		<div class="row">
-			{% block content %}{% endblock %}
+	<body>
+		{% include "src/nunjucks/templates/header.njk" %}
+		<div class="container">
+			<div class="row">
+				{% block content %}{% endblock %}
+			</div>
 		</div>
-	</div>
-	{% include "src/nunjucks/templates/footer.njk" %}
-
-</body>
+		{% include "src/nunjucks/templates/footer.njk" %}
+	</body>
 </html>

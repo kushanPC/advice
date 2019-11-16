@@ -17,36 +17,36 @@ var gulp = require('gulp'),
     reload = browserSync.reload;
 
 
-    var path = {
-        build: { //куда выплюнуть
-            html: 'build/',
-            js: 'build/js/',
-            css: 'build/css/',
-            img: 'build/img/',
-            fonts: 'build/fonts/',
-            njk: 'build/'
-        },
-        src: { //исходники
-            html: 'src/*.html',
-            js: 'src/js/main.js',
-            style: 'src/style/main.scss',
-            img: 'src/img/**/*.*',
-            fonts: 'src/fonts/**/*.*',
-            njk: 'src/nunjucks/index.njk'
-        },
-        watch: { // наблюдение
-            html: 'src/**/*.html',
-            js: 'src/js/**/*.js',
-            style: 'src/style/**/*.scss',
-            img: 'src/img/**/*.*',
-            fonts: 'src/fonts/**/*.*',
-            njk: 'src/nunjucks/**/*.njk'
-        },
-        clean: './build'
-    };
+var path = {
+    build: { //куда выплюнуть
+        html: 'build/',
+        js: 'build/js/',
+        css: 'build/css/',
+        img: 'build/img/',
+        fonts: 'build/fonts/',
+        njk: 'build/'
+    },
+    src: { //исходники
+        html: 'src/*.html',
+        js: 'src/js/main.js',
+        style: 'src/style/main.scss',
+        img: 'src/img/**/*.*',
+        fonts: 'src/fonts/**/*.*',
+        njk: 'src/nunjucks/index.njk'
+    },
+    watch: { // наблюдение
+        html: 'src/**/*.html',
+        js: 'src/js/**/*.js',
+        style: 'src/style/**/*.scss',
+        img: 'src/img/**/*.*',
+        fonts: 'src/fonts/**/*.*',
+        njk: 'src/nunjucks/**/*.njk'
+    },
+    clean: './build'
+};
 
 
-    var config = {
+var config = {
     server: {
         baseDir: "./build"
     },
@@ -61,7 +61,7 @@ gulp.task('html:build', function () {
     gulp.src(path.src.html)
         .pipe(rigger()) // rigger
         .pipe(gulp.dest(path.build.html))
-        .pipe(reload({stream: true}));
+        .pipe(reload({ stream: true }));
 });
 
 
@@ -72,7 +72,7 @@ gulp.task('js:build', function () {
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.js))
-        .pipe(reload({stream: true}));
+        .pipe(reload({ stream: true }));
 });
 
 
@@ -93,7 +93,7 @@ gulp.task('image:build', function () {
     gulp.src(path.src.img)
         .pipe(imagemin({
             progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
+            svgoPlugins: [{ removeViewBox: false }],
             use: [pngquant()],
             interlaced: true
         }))
