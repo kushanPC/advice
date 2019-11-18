@@ -1,41 +1,34 @@
-<div class="display_1">
+<div class="header">
   <div class="head d-flex">
 
-    <div class="user">
-    </div>
-  {% include "src/nunjucks/nav/nav.njk" %}
+    <div class="logo"></div>
+    {% include "src/nunjucks/nav/nav.njk" %}
+
   </div>
 
-  <div class="discerning d-flex">
+  <div class="expert-advice d-flex">
     <h1>Expert advice for discerning buyers</h1>
     <p>Our consultants and research analysts work together <br>
-       to provide understanding and clarity through the<br> intricacies
-       of an ever changing real estate cycle.
-       <!-- Our experienced team of
-       consultants thrives on helping our clients make great investment
-       decisions. We know that when we get it right, you succeed—and will
-       return to us for your next assignment. -->
-     </p>
+      to provide understanding and clarity through the<br> intricacies
+      of an ever changing real estate cycle.
+      <!-- Our experienced team of
+      consultants thrives on helping our clients make great investment
+      decisions. We know that when we get it right, you succeed—and will
+      return to us for your next assignment. -->
+    </p>
 
-    <a href="#" class="button1"><span>Learn more</span><div class="arrow"></div></a>
+    <a href="#" class="button-learn-more "><span>Learn more</span><div class="arrow-button"></div></a>
   </div>
 
+  {% set sceneryHeader = ["img-house", "img-circle", "img-snowflakes-1", "img-snowflakes-2", "img-half-circle-blue", "img-half-circle-violet", "img-background-header"] %}
 
-    <div class="images">
+  <div class="images">
 
-      <div class="img_house">
-      </div>
-      <div class="img_cyckle">
-      </div>
-      <div class="img_dot1">
-      </div>
-      <div class="img_dot2">
-      </div>
-      <div class="img_hulf">
-      </div>
-      <div class="img_pirp">
-      </div>
-      <div class="background">
-      </div>
-    </div>
+    {% for pictures in sceneryHeader %}
+
+    <div class={{pictures}}></div>
+
+    {% endfor %}
+
   </div>
+</div>
