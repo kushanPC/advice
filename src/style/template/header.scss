@@ -1,0 +1,183 @@
+.header {
+
+  .head {
+    margin-top:  3.44vw;
+    margin-left: 19.53vw;
+    width:   67.24vw;
+    justify-content: space-between;
+
+    .logo {
+      width: 3.75vw;
+      height: 3.75vw;
+      background:  url(../img/user.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .menu {
+      font-weight: 700;
+      justify-content: center;
+
+      .seach {
+        margin-top: 0.25vw;
+        margin-left: 4.01vw;
+        width: 1.35vw;
+        height: 1.35vw;
+        display: block;
+        background:  url(../img/seach.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .menu_item{
+        display: block;
+        margin-left: 3.021vw;
+
+        .i {
+          font-size: 0.87vw;
+          text-decoration: none;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.2px;
+          color: #eaf1f6;
+          line-height: 2;
+
+          &:after {
+            background-color: #45afe3;
+            display: block;
+            border-radius: 4px;
+            content: "";
+            height: 6px;
+            width: 0%;
+            transition: width .3s ease-in-out;
+          }
+
+          &:hover:after,
+          &:focus:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .expert-advice {
+    flex-direction: column;
+    width: 25.1vw;
+    margin-left: 19.74vw;
+    margin-top: 5.94vw;
+
+    h1 {
+      font-size: 2.6vw;
+      font-weight: 700;
+      color: #fff;
+      line-height: 3vw;
+      margin-bottom: 2.4vw;
+    }
+    p {
+      color: #fff;
+      font-size: 0.94vw;
+      line-height: 2vw;
+      width: 28vw;
+    }
+
+    .button-learn-more {
+      margin-right: 0.805vw;
+      margin-top: 3vw;
+      height: 3.91vw;
+      width: 11.46vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      outline: none;
+      color: #37474f;
+      border-radius: 1.04vw 0 1.04vw 1.04vw;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+      transition: .5s;
+
+      span {
+        font-weight: 800;
+        font-size: 1.04vw;
+      }
+
+      .arrow-button {
+        margin-left: 0.805vw;
+        width:  1.77vw;
+        height: 1.04vw;
+        background:  url(../img/arrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+
+      }
+    }
+  }
+  .images {
+    div[class^="img"] {
+      position: absolute;
+    }
+    .img-house {
+      top: 4.27vw;
+      right: 5.63vw;
+      width: 50.26vw;
+      height:  40.1vw;
+      background: url(../img/house.png)no-repeat center top;
+      background-size: cover;
+      z-index: -1;
+    }
+    .img-circle {
+      left: 3.39vw;
+      top: 3.02vw;
+      width: 6.15vw;
+      height:  6.15vw;
+      background: url(../img/ellips.png)no-repeat center top;
+      background-size: cover;
+    }
+    .img-snowflakes-1 {
+      left: 6.46vw;
+      top: 0vw;
+      width: 43.33vw;
+      height:   17.66vw;
+      background: url(../img/dots2.png)no-repeat center top;
+      background-size: contain;
+      z-index: -1;
+    }
+    .img-snowflakes-2 {
+      top: 0vw;
+      left: 56.6vw;
+      width: 43vw;
+      height: 17.71vw;
+      background: url(../img/dots1.png)no-repeat center top;
+      background-size: contain;
+      z-index: -1;
+    }
+    .img-half-circle-blue {
+      top: 0vw;
+      right: 11.2vw;
+      width: 32.97vw;
+      height: 2.66vw;
+      background: url(../img/cykle.png)no-repeat center top;
+      background-size: cover;
+    }
+    .img-half-circle-violet {
+      top: 1vw;
+      left: 0vw;
+      width: 5.70vw;
+      height: 46vw;
+      background: url(../img/left_pirp.png)no-repeat center top;
+      background-size: cover;
+    }
+    .img-background-header {
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 42.45vw;
+      background: url(../img/фон.png)no-repeat center top;
+      background-size: cover;
+      z-index: -10;
+    }
+  }
+}

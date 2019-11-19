@@ -1,25 +1,33 @@
 <footer>
   {% set backgroundImg = ["background-footer","card-for-form","map-for-form"] %}
+
   {% for img in backgroundImg %}
     <div class={{img}}></div>
   {% endfor %}
+
   <form class="d-flex" action="index.html" method="post">
     <div class="name-email d-flex">
-      <h2>
-        Let us hear your <br>
-        thoughts
-      </h2>
+
+      <h2>Let us hear your <br>thoughts</h2>
+
       <p>If you have any questions about our consulting services, please contact us </p>
-    <label for="name">Full name</label>
-    <input type="text" name="name" placeholder="How we should call you?">
-    <label for="mail">Email addres</label>
-    <input type="text" name="mail" placeholder="Enter a valid email address">
+
+      <label for="name">Full name</label>
+      <input type="text" name="name" placeholder="How we should call you?">
+
+      <label for="mail">Email addres</label>
+      <input type="text" name="mail" placeholder="Enter a valid email address">
     </div>
+
     <div class="your-projects d-flex">
+
       <label for="message">your message</label>
-    <textarea name="message" cols="40" rows="3" placeholder="Tell us more about your projects"></textarea>
-    <button class="button-submit" type="button" name="button">Submit<div class="arrow"></div></button>
+      <textarea name="message" cols="40" rows="3" placeholder="Tell us more about your projects"></textarea>
+
+      <button class="button-submit" type="button" name="button">Submit<div class="arrow"></div></button>
+
     </div>
+
     <div class="map">
       <p>Sacramento, CA                 <br>
                                         <br>
@@ -32,6 +40,7 @@
   </form>
 
   <div class="footer_nav d-flex">
+
     <div class="logo"></div>
 
     <p>Arda Real Estate Consulting provides <br> independent
@@ -40,23 +49,37 @@
       the best <br> risk-adjusted investment opportunities.
     </p>
 
-    {% set nav = [{h3:'OUR COMPANY', li:['Our Company','About Us','Research','Consulting','Careers']},
-                  {h3:'OUR EXPERTS', li:['Team','Coverage']},
-                  {h3:'OUR VALUES',  li:['Propiertary Tools','Forecasting','Surveys','Surban','Demographics','DesignLens']},
-                  {h3:'CONTACT',     li:['Contact Us','Office Locations','Newsletter Sign-Up','Social Media']}] %}
+    {% set nav = [
+                    {
+                      title:'OUR COMPANY',
+                      list:['Our Company','About Us','Research','Consulting','Careers']
+                    },
+                    {
+                      title:'OUR EXPERTS',
+                      list:['Team','Coverage']
+                    },
+                    {
+                      title:'OUR VALUES',
+                      list:['Propiertary Tools','Forecasting','Surveys','Surban','Demographics','DesignLens']
+                     },
+                    {
+                      title:'CONTACT',
+                      list:['Contact Us','Office Locations','Newsletter Sign-Up','Social Media']
+                    }
+                 ] %}
 
     {% for item in nav %}
-    <div class="our_company">
+      <div class="our_company">
 
-      <h3>{{ item.h3 }}</h3>
+        <h3>{{ item.title }}</h3>
 
-      <ul>
-        {% for li in item.li %}
-        <li><a href="#">{{ li }}</a></li>
-        {% endfor %}
-      </ul>
+        <ul>
+          {% for list in item.list %}
+          <li><a href="#">{{ list }}</a></li>
+          {% endfor %}
+        </ul>
 
-    </div>
+      </div>
     {% endfor %}
 
   </div>
@@ -65,8 +88,9 @@
 
   <div class="lusted d-flex">
 
-    <p>Arda Real Estate Consulting, LLC <br>
-      Copyright © 2018
+    <p>
+       Arda Real Estate Consulting, LLC <br>
+       Copyright © 2018
     </p>
 
     <div class="social d-flex">

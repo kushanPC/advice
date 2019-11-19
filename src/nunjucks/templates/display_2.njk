@@ -1,39 +1,57 @@
 <div class="company-merits d-flex">
 
-  {% set scenery = ["background-shadow", "background-home", "blu-circle", "dark-blu-circle", "small-blu-circle"] %}
+  {% set classScenery = ["background-shadow", "background-home", "blu-circle", "dark-blu-circle", "small-blu-circle"] %}
 
-  {% for pictures in scenery %}
-  <div class={{pictures}}></div>
+  {% for backgroundPictures in ClassScenery %}
+    <div class={{BackgroundPictures}}></div>
   {% endfor %}
 
   <h1 class="ahy-arda">Why Arda<br>Real Estate Consulting?</h1>
 
   <div class="advantages d-flex">
-    {% set advantageCards = [{class:'logo-card-1', h2:'Excellent reputation.', p :'The Arda Real Estate Consulting reputation among investors was
-                                                                                    formed by our  Research group and has been reinforced by our Consulting
-                                                                                    team by providing well thought-out, unbiased commendations and advice.'},
+    {% set advantageCards = [
+                              {
+                                class:'logo-card-1',
+                                title:'Excellent reputation.',
+                                description :'The Arda Real Estate Consulting reputation among investors was
+                                              formed by our  Research group and has been reinforced by our Consulting
+                                              team by providing well thought-out, unbiased commendations and advice.'
+                              },
 
-                             {class:'logo-card-2', h2:'Experienced team.',     p :'Our Consulting group is led by a senior management team each with 20+
-                                                                                    years of  direct executive level homebuilding,  development, and consulting
-                                                                                    experience.'},
-                             {class:'logo-card-3', h2:'National Footprint.',   p :'Many of our clients operate throughout the country. We are one of the largest
-                                                                                    and most geographically diverse consulting groups  which allows us to best service
-                                                                                    their needs.'},
-                             {class:'logo-card-4', h2:'Excellent Service.',    p :'Often times our clients do not have full control over  timing for their deals and the
-                                                                                    Consulting  team has a knack for making miracles happen.'}] %}
+                              {
+                               class:'logo-card-2',
+                               title:'Experienced team.',
+                               description :'Our Consulting group is led by a senior management team each with 20+
+                                             years of  direct executive level homebuilding,  development, and consulting
+                                             experience.'
+                              },
+                              {
+                               class:'logo-card-3',
+                               title:'National Footprint.',
+                               description :'Many of our clients operate throughout the country. We are one of the largest
+                                             and most geographically diverse consulting groups  which allows us to best service
+                                             their needs.'
+                              },
+                              {
+                               class:'logo-card-4',
+                               title:'Excellent Service.',
+                               description :'Often times our clients do not have full control over  timing for their deals and the
+                                             Consulting  team has a knack for making miracles happen.'
+                              }
+                            ] %}
 
 
     {% for item in advantageCards %}
 
-    <div class="advantage-card">
+      <div class="advantage-card">
 
-      <div class={{item.class}}></div>
+        <div class={{item.class}}></div>
 
-      <h2>{{item.h2}}</h2>
+          <h2>{{item.title}}</h2>
 
-      <p>{{item.p}}</p>
+        <p>{{item.description}}</p>
 
-    </div>
+      </div>
 
     {% endfor %}
 
