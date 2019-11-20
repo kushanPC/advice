@@ -8,51 +8,55 @@
     right:  0;
     width: 92.24vw;
     height: 142vw;
-    background: url(../img/тень.png)no-repeat center top;
+    background: url(../img/shadow_advantage.png)no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: -10;
     overflow: hidden;
   }
+
   .background-home {
     top: 80.5vw;
     right:  0;
     width: 100vw;
     height: 94vw;
-    background: url(../img/фон2.png)no-repeat center top;
+    background: url(../img/background_advantage.png)no-repeat center top;
     background-size: contain;
     position: absolute;
     z-index: -10;
     overflow: hidden;
   }
+
   .blu-circle {
     top: 75.94vw;
     right: 17.4vw;
     width: 6.15vw;
     height: 6.15vw;
-    background: url(../img/Ellipse_blue02.png)no-repeat center top;
+    background: url(../img/circle_big_advantage.png)no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: 1;
     overflow: hidden;
   }
+
   .dark-blu-circle {
     top: 85.26vw;
     left: 10.89vw;
     width: 2.4vw;
     height: 2.4vw;
-    background: url(../img/ellips_blue02.png)no-repeat center top;
+    background: url(../img/circle_big_advantage.png)no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: 1;
     overflow: hidden;
   }
+
   .small-blu-circle {
     top: 103.7vw;
     left: 0vw;
     width: 3.07vw;
     height: 6.15vw;
-    background: url(../img/ellips_blu03.png)no-repeat center top;
+    background: url(../img/circle_advantage_hulf.png)no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: 1;
@@ -65,6 +69,7 @@
     text-align: center;
     line-height:2vw;
   }
+
   .advantages {
     margin: auto;
     width: 61.2vw;
@@ -77,37 +82,41 @@
       height: 31.25vw;
       background-color: #fff;
       border-radius: 1vw 0 1vw 1vw;
-      .logo-card-1 {
-        background: url(../img/block01.png)no-repeat center;
+
+      .img-excellent-reputation-01 {
+        background: url(../img/img_excellent_reputation.png)no-repeat center;
       }
-      .logo-card-2 {
-        background: url(../img/block02.png)no-repeat center;
+      .img-experienced-team-02 {
+        background: url(../img/img_experienced.png)no-repeat center;
       }
-      .logo-card-3 {
-        background: url(../img/block03.png)no-repeat center;
+      .img-ational-footprint-03 {
+        background: url(../img/img_ational_footprint.png)no-repeat center;
       }
-      .logo-card-4 {
-        background: url(../img/block04.png)no-repeat center;
+      .img-excellent-service-04 {
+        background: url(../img/img_excellent_service.png)no-repeat center;
       }
 
-      div[class^="logo-card-"] {
+      div[class^="img-"] {
         margin: auto;
         padding-top: 3.59vw;
         width: 21.04vw;
         height: 7.81vw;
         background-size: contain;
       }
+
       h2 {
         margin: auto;
         margin-bottom: 1.2vw;
         width: 21.04vw;
       }
+
       p {
         margin: auto;
         width: 21.04vw;
       }
     }
   }
+
   .button-contact {
     margin: auto;
     margin-top: 5.89vw;
@@ -127,7 +136,7 @@
     .arrow {
       width:  1.77vw;
       height: 1.04vw;
-      background:  url(../img/arrow2.png);
+      background:  url(../img/arrow_white.png);
       background-repeat: no-repeat;
       background-size: contain;
       margin-left: 0.805vw;

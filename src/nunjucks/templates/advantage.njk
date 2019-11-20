@@ -1,0 +1,25 @@
+<div class="company-merits d-flex">
+
+  {% for backgroundPictures in classScenery %}
+    <div class={{backgroundPictures}}></div>
+  {% endfor %}
+
+  <h1 class="ahy-arda">Why Arda<br>Real Estate Consulting?</h1>
+
+  <div class="advantages d-flex">
+
+    {% for item in advantageCards %}
+      <div class="advantage-card">
+        <div class={{item.class}}></div>
+          <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <a href="#" class="button-contact">
+    <span>Contact us now</span><div class="arrow"></div>
+  </a>
+
+</div>

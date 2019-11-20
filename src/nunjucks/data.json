@@ -1,0 +1,46 @@
+{
+	"nav" : ["Our company", "Our experts", "Our values", "Contact"],
+	"sceneryHeader" : ["img-house", "img-circle", "img-snowflakes-1", "img-snowflakes-2", "img-half-circle-blue", "img-half-circle-violet", "img-background"],
+	"classScenery" : ["background-shadow", "background-home", "blu-circle", "dark-blu-circle", "small-blu-circle"],
+	"advantageCards" : [
+		{
+			"class":"img-excellent-reputation-01",
+			"title":"Excellent reputation.",
+			"description" :"The Arda Real Estate Consulting reputation among investors was formed by our  Research group and has been reinforced by our Consulting team by providing well thought-out, unbiased commendations and advice."
+		},
+		{
+			"class":"img-experienced-team-02",
+			"title":"Experienced team.",
+			"description" :"Our Consulting group is led by a senior management team each with 20+ years of  direct executive level homebuilding,  development, and consulting experience."
+		},
+		{
+			"class":"img-ational-footprint-03",
+			"title":"National Footprint.",
+			"description" :"Many of our clients operate throughout the country. We are one of the largest and most geographically diverse consulting groups  which allows us to best service their needs."
+		},
+		{
+			"class":"img-excellent-service-04",
+			"title":"Excellent Service.",
+			"description" :"Often times our clients do not have full control over  timing for their deals and the Consulting  team has a knack for making miracles happen."
+		}
+	],
+	"backgroundImgFooter" : ["background","background-form","map-form"],
+	"navFooter" : [
+		{
+			"title":"OUR COMPANY",
+			"list" : ["Our Company","About Us","Research"]
+		},
+		{
+			"title":"OUR EXPERTS",
+			"list" : ["Team","Coverage"]
+		},
+		{
+			"title":"OUR VALUES",
+			"list" : ["Propiertary Tools","Forecasting","Surveys","Surban","Demographics","DesignLens"]
+		},
+		{
+			"title":"CONTACT",
+			"list" : ["Contact Us","Office Locations","Newsletter Sign-Up", "Social Media"]
+		}
+	]
+}

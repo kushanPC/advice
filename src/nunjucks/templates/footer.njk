@@ -1,7 +1,6 @@
 <footer>
-  {% set backgroundImg = ["background-footer","card-for-form","map-for-form"] %}
 
-  {% for img in backgroundImg %}
+  {% for img in backgroundImgFooter %}
     <div class={{img}}></div>
   {% endfor %}
 
@@ -29,13 +28,14 @@
     </div>
 
     <div class="map">
-      <p>Sacramento, CA                 <br>
-                                        <br>
-          222 Woodmere Road , Suite 250 <br>
-          Folsom, California 95630      <br>
-                                        <br>
-          p  949-870-1227               <br>
-      </p>
+      <address>
+        Sacramento, CA                <br>
+                                      <br>
+        222 Woodmere Road , Suite 250 <br>
+        Folsom, California 95630      <br>
+                                      <br>
+        p  949-870-1227               <br>
+      </address>
     </div>
   </form>
 
@@ -49,38 +49,7 @@
       the best <br> risk-adjusted investment opportunities.
     </p>
 
-    {% set nav = [
-                    {
-                      title:'OUR COMPANY',
-                      list:['Our Company','About Us','Research','Consulting','Careers']
-                    },
-                    {
-                      title:'OUR EXPERTS',
-                      list:['Team','Coverage']
-                    },
-                    {
-                      title:'OUR VALUES',
-                      list:['Propiertary Tools','Forecasting','Surveys','Surban','Demographics','DesignLens']
-                     },
-                    {
-                      title:'CONTACT',
-                      list:['Contact Us','Office Locations','Newsletter Sign-Up','Social Media']
-                    }
-                 ] %}
-
-    {% for item in nav %}
-      <div class="our_company">
-
-        <h3>{{ item.title }}</h3>
-
-        <ul>
-          {% for list in item.list %}
-          <li><a href="#">{{ list }}</a></li>
-          {% endfor %}
-        </ul>
-
-      </div>
-    {% endfor %}
+{% include "src/nunjucks/nav/nav_Footer.njk" %}
 
   </div>
 

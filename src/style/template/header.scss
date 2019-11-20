@@ -9,7 +9,7 @@
     .logo {
       width: 3.75vw;
       height: 3.75vw;
-      background:  url(../img/user.png);
+      background:  url(../img/logo.png);
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -29,7 +29,7 @@
         background-size: contain;
       }
 
-      .menu_item{
+      .menu_item {
         display: block;
         margin-left: 3.021vw;
 
@@ -107,7 +107,7 @@
         margin-left: 0.805vw;
         width:  1.77vw;
         height: 1.04vw;
-        background:  url(../img/arrow.png);
+        background:  url(../img/arrow_blue.png);
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
@@ -119,49 +119,55 @@
     div[class^="img"] {
       position: absolute;
     }
+
     .img-house {
       top: 4.27vw;
       right: 5.63vw;
       width: 50.26vw;
       height:  40.1vw;
-      background: url(../img/house.png)no-repeat center top;
+      background: url(../img/house_header.png)no-repeat center top;
       background-size: cover;
       z-index: -1;
     }
+
     .img-circle {
       left: 3.39vw;
       top: 3.02vw;
       width: 6.15vw;
       height:  6.15vw;
-      background: url(../img/ellips.png)no-repeat center top;
+      background: url(../img/circle_gray_header.png)no-repeat center top;
       background-size: cover;
     }
+
     .img-snowflakes-1 {
       left: 6.46vw;
       top: 0vw;
       width: 43.33vw;
       height:   17.66vw;
-      background: url(../img/dots2.png)no-repeat center top;
+      background: url(../img/snowflakes_2.png)no-repeat center top;
       background-size: contain;
       z-index: -1;
     }
+
     .img-snowflakes-2 {
       top: 0vw;
       left: 56.6vw;
       width: 43vw;
       height: 17.71vw;
-      background: url(../img/dots1.png)no-repeat center top;
+      background: url(../img/snowflakes_1.png)no-repeat center top;
       background-size: contain;
       z-index: -1;
     }
+
     .img-half-circle-blue {
       top: 0vw;
       right: 11.2vw;
       width: 32.97vw;
       height: 2.66vw;
-      background: url(../img/cykle.png)no-repeat center top;
+      background: url(../img/circle_header_top.png)no-repeat center top;
       background-size: cover;
     }
+
     .img-half-circle-violet {
       top: 1vw;
       left: 0vw;
@@ -170,12 +176,13 @@
       background: url(../img/left_pirp.png)no-repeat center top;
       background-size: cover;
     }
-    .img-background-header {
+
+    .img-background {
       top: 0;
       left: 0;
       width: 100vw;
       height: 42.45vw;
-      background: url(../img/фон.png)no-repeat center top;
+      background: url(../img/background_header.png)no-repeat center top;
       background-size: cover;
       z-index: -10;
     }
