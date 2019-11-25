@@ -7,7 +7,7 @@ footer {
     right: 0;
     width: 100vw;
     height:63.02vw;
-    background: url(../img/background_footer.png)no-repeat center top;
+    background: url(../img/background-footer.png) no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: -10;
@@ -18,7 +18,7 @@ footer {
     left: 15vw;
     width: 67.45vw;
     height:39.11vw;
-    background: url(../img/card_form.png)no-repeat center top;
+    background: url(../img/card-form.png) no-repeat center top;
     background-size: cover;
     border-radius: 1vw 0 1vw 1vw;
     position: absolute;
@@ -30,14 +30,14 @@ footer {
     left: 64vw;
     width: 27.19vw;
     height:30.42vw;
-    background: url(../img/map_form.png)no-repeat center top;
+    background: url(../img/map-form.png) no-repeat center top;
     background-size: cover;
     border-radius: 1vw;
     position: absolute;
     z-index: -10;
   }
 
-  .footer_nav {
+  .footer-nav {
     margin: auto;
     margin-top: 24vw;
     width: 72.92vw;
@@ -104,24 +104,24 @@ footer {
       height: 2.45vw;
       justify-content: space-between;
 
-      div[class^="c_"] {
+      div[class^="c-"] {
         width: 2.45vw;
         height: 2.45vw;
         background-repeat: no-repeat;
         background-size: contain;
       }
-      .c_fb {
+      .c-fb {
         background:  url(../img/fb.png);
       }
-      .c_inst {
+      .c-inst {
         background:  url(../img/inst.png);
       }
-      .c_tw {
+      .c-tw {
         background:  url(../img/wt.png);
       }
     }
   }
-  form{
+  form {
     margin: auto;
     width: 60.52vw;
     height: 24.11vw;
@@ -196,7 +196,7 @@ footer {
         .arrow {
           width:  1.77vw;
           height: 1.04vw;
-          background:  url(../img/arrow_white.png);
+          background:  url(../img/arrow-white.png);
           background-repeat: no-repeat;
           background-size: contain;
           margin-left: 0.805vw;

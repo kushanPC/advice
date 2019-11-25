@@ -1,24 +1,23 @@
 'use strict';
 
-var gulp = require('gulp');
-var njkRender = require('gulp-nunjucks-render');
-var data = require('gulp-data');
-var prettify = require('gulp-html-beautify');
-var watch = require('gulp-watch');
-var prefixer = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var rigger = require('gulp-rigger');
-var cssmin = require('gulp-minify-css');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
-var rimraf = require('rimraf');
-var browserSync = require("browser-sync");
-var reload = browserSync.reload;
-var data = require('gulp-data');
+const gulp = require('gulp');
+const njkRender = require('gulp-nunjucks-render');
+const data = require('gulp-data');
+const prettify = require('gulp-html-beautify');
+const watch = require('gulp-watch');
+const prefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const rigger = require('gulp-rigger');
+const cssmin = require('gulp-minify-css');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
+const rimraf = require('rimraf');
+const browserSync = require("browser-sync");
+const reload = browserSync.reload;
 
-var path = {
+const path = {
     build: { //куда выплюнуть
         html: 'build/',
         js: 'build/js/',
@@ -47,7 +46,7 @@ var path = {
 };
 
 
-var config = {
+const config = {
     server: {
         baseDir: './build'
     },
@@ -114,7 +113,7 @@ gulp.task('nunjucks', function() {
   return gulp.src(path.src.njk)
   // Adding data to Nunjucks
   .pipe(data(function () {
-    return require('./src/nunjucks/data.json')
+    return require('./src/data.json')
   }))
   .pipe(njkRender())
   .pipe(prettify({

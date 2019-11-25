@@ -8,7 +8,7 @@
     right:  0;
     width: 92.24vw;
     height: 142vw;
-    background: url(../img/shadow_advantage.png)no-repeat center top;
+    background: url(../img/shadow-advantage.png) no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: -10;
@@ -20,7 +20,7 @@
     right:  0;
     width: 100vw;
     height: 94vw;
-    background: url(../img/background_advantage.png)no-repeat center top;
+    background: url(../img/background-advantage.png) no-repeat center top;
     background-size: contain;
     position: absolute;
     z-index: -10;
@@ -32,7 +32,7 @@
     right: 17.4vw;
     width: 6.15vw;
     height: 6.15vw;
-    background: url(../img/circle_big_advantage.png)no-repeat center top;
+    background: url(../img/circle-big-advantage.png) no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: 1;
@@ -44,7 +44,7 @@
     left: 10.89vw;
     width: 2.4vw;
     height: 2.4vw;
-    background: url(../img/circle_big_advantage.png)no-repeat center top;
+    background: url(../img/circle-big-advantage.png) no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: 1;
@@ -56,7 +56,7 @@
     left: 0vw;
     width: 3.07vw;
     height: 6.15vw;
-    background: url(../img/circle_advantage_hulf.png)no-repeat center top;
+    background: url(../img/circle-advantage-hulf.png) no-repeat center top;
     background-size: cover;
     position: absolute;
     z-index: 1;
@@ -83,17 +83,17 @@
       background-color: #fff;
       border-radius: 1vw 0 1vw 1vw;
 
-      .img-excellent-reputation-01 {
-        background: url(../img/img_excellent_reputation.png)no-repeat center;
+      .img-reputation-01 {
+        background: url(../img/img-excellent-reputation.png) no-repeat center;
       }
-      .img-experienced-team-02 {
-        background: url(../img/img_experienced.png)no-repeat center;
+      .img-team-02 {
+        background: url(../img/img-experienced.png) no-repeat center;
       }
-      .img-ational-footprint-03 {
-        background: url(../img/img_ational_footprint.png)no-repeat center;
+      .img-footprint-03 {
+        background: url(../img/img-ational-footprint.png) no-repeat center;
       }
-      .img-excellent-service-04 {
-        background: url(../img/img_excellent_service.png)no-repeat center;
+      .img-service-04 {
+        background: url(../img/img-excellent-service.png) no-repeat center;
       }
 
       div[class^="img-"] {
@@ -136,7 +136,7 @@
     .arrow {
       width:  1.77vw;
       height: 1.04vw;
-      background:  url(../img/arrow_white.png);
+      background:  url(../img/arrow-white.png);
       background-repeat: no-repeat;
       background-size: contain;
       margin-left: 0.805vw;
