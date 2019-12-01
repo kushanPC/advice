@@ -1,31 +1,31 @@
-<div class="header">
-  <div class="head d-flex">
+  <div class="header">
+    <div class="head d-flex">
 
-    <div class="logo"></div>
+      <div class="logo"></div>
 
-    {% include "src/nunjucks/nav/nav.njk" %}
+      {% include "src/nunjucks/nav/nav.njk" %}
+
+    </div>
+
+    <div class="expert-advice d-flex">
+
+      <h1>Expert advice for discerning buyers</h1>
+
+      <p>Our consultants and research analysts work together <br>
+        to provide understanding and clarity through the<br> intricacies
+        of an ever changing real estate cycle.
+      </p>
+
+      <a href="#" class="button-learn-more d-flex">
+        <span>Learn more</span>
+        <div class="arrow-button"></div>
+      </a>
+    </div>
+
+    <div class="images">
+      {% for pictures in scenery.header  %}
+        <div class={{pictures}}></div>
+      {% endfor %}
+    </div>
 
   </div>
-
-  <div class="expert-advice d-flex">
-
-    <h1>Expert advice for discerning buyers</h1>
-
-    <p>Our consultants and research analysts work together <br>
-      to provide understanding and clarity through the<br> intricacies
-      of an ever changing real estate cycle.
-    </p>
-
-    <a href="#" class="button-learn-more d-flex">
-      <span>Learn more</span>
-      <div class="arrow-button"></div>
-    </a>
-  </div>
-
-  <div class="images">
-    {% for pictures in scenery.header  %}
-      <div class={{pictures}}></div>
-    {% endfor %}
-  </div>
-
-</div>

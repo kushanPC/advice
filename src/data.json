@@ -7,43 +7,43 @@
 
 	"advantageCards" : [
 		{
-			"class":"img-reputation-01",
-			"title":"Excellent reputation.",
-			"description" :"The Arda Real Estate Consulting reputation among investors was formed by our  Research group and has been reinforced by our Consulting team by providing well thought-out, unbiased commendations and advice."
+		"class":"img-reputation-01",
+		"title":"Excellent reputation.",
+		"description" :"The Arda Real Estate Consulting reputation among investors was formed by our  Research group and has been reinforced by our Consulting team by providing well thought-out, unbiased commendations and advice."
 		},
 		{
-			"class":"img-team-02",
-			"title":"Experienced team.",
-			"description" :"Our Consulting group is led by a senior management team each with 20+ years of  direct executive level homebuilding,  development, and consulting experience."
+		"class":"img-team-02",
+		"title":"Experienced team.",
+		"description" :"Our Consulting group is led by a senior management team each with 20+ years of  direct executive level homebuilding,  development, and consulting experience."
 		},
 		{
-			"class":"img-footprint-03",
-			"title":"National Footprint.",
-			"description" :"Many of our clients operate throughout the country. We are one of the largest and most geographically diverse consulting groups  which allows us to best service their needs."
+		"class":"img-footprint-03",
+		"title":"National Footprint.",
+		"description" :"Many of our clients operate throughout the country. We are one of the largest and most geographically diverse consulting groups  which allows us to best service their needs."
 		},
 		{
-			"class":"img-service-04",
-			"title":"Excellent Service.",
-			"description" :"Often times our clients do not have full control over  timing for their deals and the Consulting  team has a knack for making miracles happen."
+		"class":"img-service-04",
+		"title":"Excellent Service.",
+		"description" :"Often times our clients do not have full control over  timing for their deals and the Consulting  team has a knack for making miracles happen."
 		}
 	],
 	"backgroundImgFooter" : ["background","background-form","map-form"],
 	"navFooter" : [
 		{
-			"title":"OUR COMPANY",
-			"list" : ["Our Company","About Us","Research"]
+		"title":"OUR COMPANY",
+		"list" : ["Our Company","About Us","Research"]
 		},
 		{
-			"title":"OUR EXPERTS",
-			"list" : ["Team","Coverage"]
+		"title":"OUR EXPERTS",
+		"list" : ["Team","Coverage"]
 		},
 		{
-			"title":"OUR VALUES",
-			"list" : ["Propiertary Tools","Forecasting","Surveys","Surban","Demographics","DesignLens"]
+		"title":"OUR VALUES",
+		"list" : ["Propiertary Tools","Forecasting","Surveys","Surban","Demographics","DesignLens"]
 		},
 		{
-			"title":"CONTACT",
-			"list" : ["Contact Us","Office Locations","Newsletter Sign-Up", "Social Media"]
+		"title":"CONTACT",
+		"list" : ["Contact Us","Office Locations","Newsletter Sign-Up", "Social Media"]
 		}
 	]
 }

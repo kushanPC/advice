@@ -14,7 +14,7 @@ const cssmin = require('gulp-minify-css');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const rimraf = require('rimraf');
-const browserSync = require("browser-sync");
+const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 
 const path = {
