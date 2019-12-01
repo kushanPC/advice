@@ -1,41 +1,31 @@
-<div class="display_1">
-  <div class="head d-flex">
+  <div class="header">
+    <div class="head d-flex">
 
-    <div class="user">
+      <div class="logo"></div>
+
+      {% include "src/nunjucks/nav/nav.njk" %}
+
     </div>
-  {% include "src/nunjucks/nav/nav.njk" %}
-  </div>
 
-  <div class="discerning d-flex">
-    <h1>Expert advice for discerning buyers</h1>
-    <p>Our consultants and research analysts work together <br>
-       to provide understanding and clarity through the<br> intricacies
-       of an ever changing real estate cycle.
-       <!-- Our experienced team of
-       consultants thrives on helping our clients make great investment
-       decisions. We know that when we get it right, you succeed—and will
-       return to us for your next assignment. -->
-     </p>
+    <div class="expert-advice d-flex">
 
-    <a href="#" class="button1"><span>Learn more</span><div class="arrow"></div></a>
-  </div>
+      <h1>Expert advice for discerning buyers</h1>
 
+      <p>Our consultants and research analysts work together <br>
+        to provide understanding and clarity through the<br> intricacies
+        of an ever changing real estate cycle.
+      </p>
+
+      <a href="#" class="button-learn-more d-flex">
+        <span>Learn more</span>
+        <div class="arrow-button"></div>
+      </a>
+    </div>
 
     <div class="images">
-
-      <div class="img_house">
-      </div>
-      <div class="img_cyckle">
-      </div>
-      <div class="img_dot1">
-      </div>
-      <div class="img_dot2">
-      </div>
-      <div class="img_hulf">
-      </div>
-      <div class="img_pirp">
-      </div>
-      <div class="background">
-      </div>
+      {% for pictures in scenery.header  %}
+        <div class={{pictures}}></div>
+      {% endfor %}
     </div>
+
   </div>

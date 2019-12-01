@@ -1,0 +1,146 @@
+.company-merits {
+  width: 100%;
+  padding-top:18.23vw;
+  flex-direction: column;
+
+  .background-shadow {
+    top: 0;
+    right:  0;
+    width: 92.24vw;
+    height: 142vw;
+    background: url(../img/shadow-advantage.png) no-repeat center top;
+    background-size: cover;
+    position: absolute;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  .background-home {
+    top: 80.5vw;
+    right:  0;
+    width: 100vw;
+    height: 94vw;
+    background: url(../img/background-advantage.png) no-repeat center top;
+    background-size: contain;
+    position: absolute;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  .blu-circle {
+    top: 75.94vw;
+    right: 17.4vw;
+    width: 6.15vw;
+    height: 6.15vw;
+    background: url(../img/circle-big-advantage.png) no-repeat center top;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .dark-blu-circle {
+    top: 85.26vw;
+    left: 10.89vw;
+    width: 2.4vw;
+    height: 2.4vw;
+    background: url(../img/circle-big-advantage.png) no-repeat center top;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .small-blu-circle {
+    top: 103.7vw;
+    left: 0vw;
+    width: 3.07vw;
+    height: 6.15vw;
+    background: url(../img/circle-advantage-hulf.png) no-repeat center top;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .ahy-arda {
+    margin: auto;
+    display: block;
+    text-align: center;
+    line-height:2vw;
+  }
+
+  .advantages {
+    margin: auto;
+    width: 61.2vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .advantage-card {
+      margin-top: 3vw;
+      width: 28.75vw;
+      height: 31.25vw;
+      background-color: #fff;
+      border-radius: 1vw 0 1vw 1vw;
+
+      .img-reputation-01 {
+        background: url(../img/img-excellent-reputation.png) no-repeat center;
+      }
+      .img-team-02 {
+        background: url(../img/img-experienced.png) no-repeat center;
+      }
+      .img-footprint-03 {
+        background: url(../img/img-ational-footprint.png) no-repeat center;
+      }
+      .img-service-04 {
+        background: url(../img/img-excellent-service.png) no-repeat center;
+      }
+
+      div[class^="img-"] {
+        margin: auto;
+        padding-top: 3.59vw;
+        width: 21.04vw;
+        height: 7.81vw;
+        background-size: contain;
+      }
+
+      h2 {
+        margin: auto;
+        margin-bottom: 1.2vw;
+        width: 21.04vw;
+      }
+
+      p {
+        margin: auto;
+        width: 21.04vw;
+      }
+    }
+  }
+
+  .button-contact {
+    margin: auto;
+    margin-top: 5.89vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    height: 3.91vw;
+    width: 14.58vw;
+    border-radius: 1.04vw 0 1.04vw 1.04vw;
+    background: $lightBlue;
+    box-shadow: 0 0 20px rgba(0,0,0,.2  );
+    transition: .5s;
+
+    .arrow {
+      width:  1.77vw;
+      height: 1.04vw;
+      background:  url(../img/arrow-white.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 0.805vw;
+      display: block;
+    }
+  }
+}

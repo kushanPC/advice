@@ -1,0 +1,13 @@
+{% for item in navFooter %}
+	<div class="our-company">
+
+		<h3>{{ item.title }}</h3>
+
+		<ul>
+			{% for list in item.list %}
+			<li><a href="#">{{ list }}</a></li>
+			{% endfor %}
+		</ul>
+
+	</div>
+{% endfor %}

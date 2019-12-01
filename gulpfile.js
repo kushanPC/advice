@@ -1,23 +1,23 @@
 'use strict';
 
-var gulp = require('gulp'),
-    njkRender = require('gulp-nunjucks-render'),
-    prettify = require('gulp-html-beautify'),
-    watch = require('gulp-watch'),
-    prefixer = require('gulp-autoprefixer'),
-    uglify = require('gulp-uglify'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    rigger = require('gulp-rigger'),
-    cssmin = require('gulp-minify-css'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
-    rimraf = require('rimraf'),
-    browserSync = require("browser-sync"),
-    reload = browserSync.reload;
+const gulp = require('gulp');
+const njkRender = require('gulp-nunjucks-render');
+const data = require('gulp-data');
+const prettify = require('gulp-html-beautify');
+const watch = require('gulp-watch');
+const prefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const rigger = require('gulp-rigger');
+const cssmin = require('gulp-minify-css');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
+const rimraf = require('rimraf');
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
 
-
-var path = {
+const path = {
     build: { //куда выплюнуть
         html: 'build/',
         js: 'build/js/',
@@ -46,14 +46,14 @@ var path = {
 };
 
 
-var config = {
+const config = {
     server: {
-        baseDir: "./build"
+        baseDir: './build'
     },
     tunnel: true,
     host: 'localhost',
     port: 9000,
-    logPrefix: "Frontend_Devil"
+    logPrefix: 'Frontend_Devil'
 };
 
 
@@ -108,14 +108,19 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+
 gulp.task('nunjucks', function() {
-	return gulp.src(path.src.njk)
-		.pipe(njkRender())
-		.pipe(prettify({
-			indent_size : 4
-		}))
-		.pipe(gulp.dest(path.build.njk))
-    .pipe(reload({stream: true}));
+  return gulp.src(path.src.njk)
+  // Adding data to Nunjucks
+  .pipe(data(function () {
+    return require('./src/data.json')
+  }))
+  .pipe(njkRender())
+  .pipe(prettify({
+    indent_size : 4
+  }))
+  .pipe(gulp.dest(path.build.njk))
+  .pipe(reload({stream: true}))
 });
 
 
@@ -124,7 +129,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'nunjucks'
 ]);
 
 

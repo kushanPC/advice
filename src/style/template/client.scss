@@ -1,0 +1,22 @@
+.clients {
+  .quotes {
+    top: 209.53vw;
+    left: 12.86vw;
+    width: 19.84vw;
+    height:14.95vw;
+    position: absolute;
+    background: url(../img/quotes.png) no-repeat center top;
+    background-size: cover;
+    z-index: -10;
+  }
+
+  .clients {
+    margin: auto;
+    margin-top: 40.83vw;
+    width: 74.48vw;
+
+    h2 {
+      margin-left: 27vw;
+    }
+  }
+}
